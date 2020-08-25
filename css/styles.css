@@ -11,6 +11,7 @@
   /* Цвета фона */
   --primary-bck-color: #ffffff;
   --secondary-bck-color: #2f303a;
+  --bck-section-white: #f5f4fa;
   /* Стили шрифтов */
   --letter: 0.03em;
 }
@@ -32,8 +33,8 @@ body {
 
 .header-section {
   margin-top: 0;
-  margin-bottom: 50px;
-
+  margin-bottom: 0px;
+  padding-bottom: 50px;
   font-size: 36px;
   font-weight: 700;
   line-height: 1.15;
@@ -61,16 +62,8 @@ body {
   text-decoration: none;
 }
 
-.zero-indents {
-  margin-bottom: 0;
-  margin-top: 0;
-}
-
 /* Логотип */
 .logo {
-  padding-top: 24px;
-  padding-bottom: 25px;
-
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   line-height: 1.2;
@@ -87,6 +80,8 @@ body {
   font-weight: 500;
   line-height: 1;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .site-nav .link {
@@ -94,7 +89,6 @@ body {
 }
 
 .contacts {
-  padding-top: 32px;
   padding-bottom: 32px;
 }
 
@@ -112,15 +106,16 @@ body {
 
 /* Герой */
 .wrap-hero {
-  background-color: var(--secondary-bck-color);
-  padding: 200px 240px 280px 235px;
-  margin-bottom: 94px;
+  padding-top: 200px;
+  padding-bottom: 280px;
   text-align: center;
+  background-color: var(--secondary-bck-color);
 }
 
 .header-hero {
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
+  padding-bottom: 30px;
   font-size: 44px;
   font-weight: 900;
   line-height: 1.36;
@@ -144,18 +139,21 @@ body {
   background-color: var(--accent-blue-color);
 }
 
-/* Отступы между секциями */
+/* Обертки для секций */
 
 .wrap-why-we {
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .wrap-about-us {
-  margin-bottom: 188px;
+  padding-bottom: 94px;
 }
 
 .wrap-our-team {
-  margin-bottom: 124px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: #f5f4fa;
 }
 
 /* Наши преимущества */
@@ -168,10 +166,14 @@ body {
 .subtitle-why-we {
   margin-top: 0;
   margin-bottom: 10px;
-
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+}
+
+.mg-zero {
+  margin-top: 0;
+  margin-bottom: 0px;
 }
 
 /* Наша команда */
@@ -194,17 +196,23 @@ body {
   margin-bottom: 30px;
 }
 
-/* Футер */
-.wrap-footer {
-  background-color: var(--secondary-bck-color);
+/* Портфолио */
+
+/* Обертка */
+
+.wrap-my-project {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
-.wrap-footer .link {
-  color: var(--accent-rgba-color);
+.filter-marg {
+  margin-bottom: 34px;
 }
+/* Кнопки */
+.btn {
+  padding: 10px 22px;
+  min-width: 73px;
 
-/* Страница портфолио */
-.filter .btn {
   font-family: inherit;
   font-size: 16px;
   font-weight: 500;
@@ -214,13 +222,19 @@ body {
   border: none;
 }
 
-.filter .btn:hover,
-.filter .btn:focus {
+.btn:hover,
+.btn:focus {
   color: var(--accent-white-color);
   background-color: var(--accent-blue-color);
 }
 
-.portfolio .title-portfolio {
+/* Список портфолио */
+
+/* Заголовки и текст */
+.title-portfolio {
+  margin-top: 20px;
+  margin-bottom: 4px;
+
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
@@ -233,30 +247,32 @@ body {
   color: var(--primary-text-color);
 }
 
-/* Outline */
+/* Футер */
+.wrap-footer {
+  background-color: var(--secondary-bck-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 
-/* Для кнопок: min-width и text-align:center */
-/* border у всех кнопок. Там где он не виден - transparent */
+.wrap-footer .link {
+  color: var(--accent-rgba-color);
+}
 
-/* .btn {
+.logo-footer-marg {
   display: inline-block;
-} */
+  margin-bottom: 20px;
+}
 
-/* layout grid в Figma для измерения   */
+.address-marg {
+  margin-bottom: 9px;
+  margin-top: 0;
+}
 
-/* Отступ слева и справа - 215 px */
+.font-style {
+  font-style: normal;
+}
 
-/* Для картинок
-display:block
-width: 100%; 
-height: auto; */
-
-/* Обнуление марджинов для последнего элемента списка */
-/* 1170 * 12 / 4  */
-/* между секциями не должно быть марджинов */
-/* марджины между эл-ми на 1-м уровне */
-
-/* Отступы logo footer 60pxtop 
-20px button (до контактов) */
-/* в header: 24px top 25px button 
-93 px right до навигации */
+/* Если нужно раздвинуть элементы на 1-м уровне
+вложенности - используем марджин  */
+/* Если нужно отодвинуть от родителя - 
+применяем для родителя */

@@ -15,16 +15,18 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <div class="container">
-      <!-- Навигация и контакты -->
-      <header class="nav-and-contacts">
+    <!-- Навигация и контакты -->
+    <header class="nav-and-contacts">
+      <div class="container">
         <nav>
           <a class="link logo" href="./index.html">
             <span class="accent-color">Web</span>Studio</a
           >
-          <ul menu class="list site-nav text">
+          <ul class="list site-nav text">
             <li><a class="link" href="./index.html">Студия</a></li>
-            <li><a class="link current" href="">Портфолио</a></li>
+            <li>
+              <a class="link current" href="./portfolio.html">Портфолио</a>
+            </li>
             <li><a class="link" href="">Контакты</a></li>
           </ul>
         </nav>
@@ -42,31 +44,29 @@
             </li>
           </ul>
         </address>
-      </header>
-
-      <!-- Виды работ  -->
-      <main>
-        <section>
+      </div>
+    </header>
+    <!-- Виды работ  -->
+    <main>
+      <section class="wrap-my-project">
+        <div class="container">
           <h1 class="hidden-title">Выполненные проекты</h1>
-          <ul class="list filter">
+          <ul class="list">
             <li><button class="btn" type="button">Все</button></li>
             <li><button class="btn" type="button">Веб-сайты</button></li>
             <li><button class="btn" type="button">Приложения</button></li>
             <li><button class="btn" type="button">Дизайн</button></li>
-            <li><button class="btn" type="button">Маркетинг</button></li>
+            <li class="filter-marg">
+              <button class="btn" type="button">Маркетинг</button>
+            </li>
           </ul>
-        </section>
 
-        <!-- Список портфолио -->
-        <section>
-          <ul class="list portfolio">
+          <!-- Список портфолио -->
+
+          <ul class="list">
             <li>
               <a class="link" href="">
-                <imgs
-                  src="./images/portfolio-1.jpg"
-                  alt="Страница сайта"
-                  width="370"
-                />
+                <img src="./images/img.jpg" alt="Страница сайта" width="370" />
                 <h2 class="title-portfolio">Технокряк</h2>
                 <span class="text-portfolio">Веб-сайт</span>
               </a>
@@ -142,19 +142,21 @@
               </a>
             </li>
           </ul>
-        </section>
-      </main>
+        </div>
+      </section>
+    </main>
 
-      <!-- Футер -->
-      <footer class="wrap-footer">
-        <a class="link logo" href="./index.html">
+    <!-- Футер -->
+    <footer class="wrap-footer">
+      <div class="container">
+        <a class="link logo logo-footer-marg" href="./index.html">
           <span class="accent-color">Web</span
           ><span class="white-text">Studio</span>
         </a>
         <address class="text white-text">
-          г. Киев, пр-т Леси Украинки, 26
+          <p class="address-marg font-style">г. Киев, пр-т Леси Украинки, 26</p>
           <ul class="list">
-            <li>
+            <li class="address-marg">
               <a class="link" href="mailto:info@example.com"
                 >info@example.com</a
               >
@@ -164,7 +166,7 @@
             </li>
           </ul>
         </address>
-      </footer>
-    </div>
+      </div>
+    </footer>
   </body>
 </html>
