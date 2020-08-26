@@ -78,8 +78,8 @@ body {
 /* Навигация */
 
 .nav-and-contacts {
-  /* padding-top: 24px;
-  padding-bottom: 25px; */
+  padding-top: 24px;
+  padding-bottom: 25px;
 
   font-weight: 500;
   line-height: 1;
@@ -103,12 +103,14 @@ body {
   margin-right: auto;
 }
 
-.site-nav .link,
+/* .site-nav .link,
 .contacts .link {
   display: block;
   padding-top: 28px;
-  padding-bottom: 28px;
-}
+  padding-bottom: 28px; */
+/* outline-style: none; 
+}*/
+
 .site-nav .link {
   color: var(--header-text-color);
 }
@@ -233,21 +235,26 @@ body {
   padding-bottom: 94px;
 }
 
-.filter-marg {
-  margin-bottom: 34px;
-}
 /* Кнопки */
+.radio-btn {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 50px;
+}
+
 .btn {
-  padding: 10px 22px;
+  padding: 6px 22px;
+  border: none;
   min-width: 73px;
 
   font-family: inherit;
   font-size: 16px;
   font-weight: 500;
-  line-height: 1.6;
+  line-height: 1.63;
+  letter-spacing: var(--letter);
   color: var(--header-text-color);
   background-color: var(--primary-bck-color);
-  border: none;
 }
 
 .btn:hover,
@@ -258,7 +265,25 @@ body {
 
 /* Список портфолио */
 
-/* Заголовки и текст */
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio .item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+/* h2 {
+  margin: 0;
+} */
+
 .title-portfolio {
   margin-top: 20px;
   margin-bottom: 4px;
@@ -304,9 +329,3 @@ body {
 вложенности - используем марджин  */
 /* Если нужно отодвинуть от родителя - 
 применяем для родителя */
-
-/* img {
-display: block;
-Width: 100%
-Height: auto
-}  */
