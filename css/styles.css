@@ -33,8 +33,7 @@ body {
 
 .header-section {
   margin-top: 0;
-  margin-bottom: 0px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   font-size: 36px;
   font-weight: 700;
   line-height: 1.15;
@@ -44,7 +43,7 @@ body {
 
 .text {
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.72;
   color: var(--primary-text-color);
 }
 
@@ -64,6 +63,8 @@ body {
 
 /* Логотип */
 .logo {
+  margin-right: 93px;
+
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   line-height: 1.2;
@@ -74,22 +75,42 @@ body {
   color: var(--accent-blue-color);
 }
 
-/* Навигация и контакты */
+/* Навигация */
 
 .nav-and-contacts {
+  /* padding-top: 24px;
+  padding-bottom: 25px; */
+
   font-weight: 500;
   line-height: 1;
   letter-spacing: 0.02em;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
+.flex-header,
+.flex-nav,
+.site-nav,
+.contacts {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav > .item:not(:last-child),
+.contacts > .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.flex-nav {
+  margin-right: auto;
+}
+
+.site-nav .link,
+.contacts .link {
+  display: block;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
 .site-nav .link {
   color: var(--header-text-color);
-}
-
-.contacts {
-  padding-bottom: 32px;
 }
 
 .contacts .link {
@@ -107,18 +128,17 @@ body {
 /* Герой */
 .wrap-hero {
   padding-top: 200px;
-  padding-bottom: 280px;
+  padding-bottom: 200px;
   text-align: center;
   background-color: var(--secondary-bck-color);
 }
 
 .header-hero {
   margin-top: 0;
-  margin-bottom: 0px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
   font-size: 44px;
   font-weight: 900;
-  line-height: 1.36;
+  line-height: 1.37;
   text-transform: uppercase;
   color: var(--accent-white-color);
 }
@@ -157,8 +177,17 @@ body {
 }
 
 /* Наши преимущества */
+
+.list-why-we {
+  display: flex;
+}
+
+.list-why-we > .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .hidden-title {
-  visibility: hidden;
+  display: none;
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -183,7 +212,6 @@ body {
   font-weight: 500;
   line-height: 1.2;
   color: var(--header-text-color);
-  /* text-align: center; */
 }
 
 .text-our-team {
@@ -276,3 +304,9 @@ body {
 вложенности - используем марджин  */
 /* Если нужно отодвинуть от родителя - 
 применяем для родителя */
+
+/* img {
+display: block;
+Width: 100%
+Height: auto
+}  */
