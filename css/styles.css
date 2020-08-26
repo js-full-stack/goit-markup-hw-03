@@ -23,12 +23,19 @@ body {
   margin: 0;
 }
 
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  outline: 1px solid orangered;
 }
 
 .header-section {
@@ -232,7 +239,7 @@ body {
 
 .wrap-my-project {
   padding-top: 94px;
-  padding-bottom: 94px;
+  padding-bottom: 114px;
 }
 
 /* Кнопки */
@@ -265,27 +272,25 @@ body {
 
 /* Список портфолио */
 
-img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
 .portfolio {
   display: flex;
   flex-wrap: wrap;
+}
+
+.portfolio .item {
+  width: calc((100% - 30px * 2) / 3);
 }
 
 .portfolio .item:not(:nth-child(3n)) {
   margin-right: 30px;
 }
 
-/* h2 {
-  margin: 0;
-} */
+.img-portfolio {
+  padding-bottom: 20px;
+}
 
 .title-portfolio {
-  margin-top: 20px;
+  margin-top: 0px;
   margin-bottom: 4px;
 
   font-size: 18px;
@@ -298,6 +303,11 @@ img {
 .text-portfolio {
   line-height: 1.88;
   color: var(--primary-text-color);
+}
+
+.text-portfolio:not(:nth-last-child(n + 7)) {
+  display: inline-block;
+  margin-bottom: 50px;
 }
 
 /* Футер */
@@ -325,7 +335,15 @@ img {
   font-style: normal;
 }
 
+/* calc ((100$ - **px)/3) калькулятор? 
+ */
 /* Если нужно раздвинуть элементы на 1-м уровне
 вложенности - используем марджин  */
 /* Если нужно отодвинуть от родителя - 
 применяем для родителя */
+
+/* li calc ((100$ - **px)/3)
+ маржины 
+Ниже: 
+li - обнуление крайней геометрии через :nth */
+/* Обернуть в див, задать паддинг до текста и от текста вниз до спана - маржин - картички портфолио */
