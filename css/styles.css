@@ -35,7 +35,6 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 1px solid orangered;
 }
 
 .header-section {
@@ -68,12 +67,18 @@ img {
   text-decoration: none;
 }
 
+.mg-zero {
+  margin-top: 0;
+  margin-bottom: 0px;
+}
+
 /* Логотип */
 .logo {
   margin-right: 93px;
 
   font-family: "Raleway", sans-serif;
   font-size: 26px;
+  font-weight: 700;
   line-height: 1.2;
   color: var(--accent-black-color);
 }
@@ -83,7 +88,6 @@ img {
 }
 
 /* Навигация */
-
 .nav-and-contacts {
   padding-top: 24px;
   padding-bottom: 25px;
@@ -109,14 +113,6 @@ img {
 .flex-nav {
   margin-right: auto;
 }
-
-/* .site-nav .link,
-.contacts .link {
-  display: block;
-  padding-top: 28px;
-  padding-bottom: 28px; */
-/* outline-style: none; 
-}*/
 
 .site-nav .link {
   color: var(--header-text-color);
@@ -172,16 +168,15 @@ img {
 
 .wrap-why-we {
   padding-top: 94px;
-  padding-bottom: 94px;
 }
 
-.wrap-about-us {
-  padding-bottom: 94px;
+.wrap-about-us,
+.wrap-our-team {
+  padding-top: 94px;
+  padding-bottom: 124px;
 }
 
 .wrap-our-team {
-  padding-top: 94px;
-  padding-bottom: 94px;
   background-color: #f5f4fa;
 }
 
@@ -209,24 +204,48 @@ img {
   text-transform: uppercase;
 }
 
-.mg-zero {
-  margin-top: 0;
-  margin-bottom: 0px;
+/* Чем мы занимаемся */
+.about-us {
+  display: flex;
+}
+
+.about-us .item {
+  width: calc((100% - 30px * 2) / 3);
+  margin-right: 30px;
+}
+
+.about-us .item:last-child {
+  margin-right: 0;
 }
 
 /* Наша команда */
 .subtitle-our-team {
   margin-top: 0;
   margin-bottom: 10px;
+  text-align: center;
   font-weight: 500;
   line-height: 1.2;
   color: var(--header-text-color);
+}
+
+.our-team {
+  display: flex;
+}
+
+.our-team .item {
+  width: calc(100% - 30px * 3) / 4;
+  margin-right: 30px;
+}
+
+.our-team .item:last-child {
+  margin-right: 0px;
 }
 
 .text-our-team {
   line-height: 1.2;
   margin-top: 0;
   margin-bottom: 0;
+  text-align: center;
 }
 
 .indent-pic {
