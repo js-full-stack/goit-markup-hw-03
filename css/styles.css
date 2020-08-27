@@ -138,6 +138,7 @@ img {
 .wrap-hero {
   padding-top: 200px;
   padding-bottom: 200px;
+
   text-align: center;
   background-color: var(--secondary-bck-color);
 }
