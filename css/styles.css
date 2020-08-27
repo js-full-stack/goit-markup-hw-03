@@ -49,7 +49,7 @@ img {
 
 .text {
   font-size: 14px;
-  line-height: 1.72;
+  line-height: 1.71;
   color: var(--primary-text-color);
 }
 
@@ -323,10 +323,14 @@ img {
   padding-bottom: 20px;
 }
 
+.desc-portfolio {
+  margin-left: 24px;
+}
+
 .title-portfolio {
   margin-top: 0px;
   margin-bottom: 4px;
-  margin-left: 24px;
+
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
@@ -335,8 +339,6 @@ img {
 }
 
 .text-portfolio {
-  margin-left: 24px;
-
   line-height: 1.88;
   color: var(--primary-text-color);
 }
@@ -346,6 +348,10 @@ img {
   background-color: var(--secondary-bck-color);
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.grid-contacts {
+  width: 231px;
 }
 
 .wrap-footer .link {
@@ -360,4 +366,8 @@ img {
 .address-marg {
   margin-bottom: 9px;
   margin-top: 0;
+}
+
+.address {
+  line-height: 1.46;
 }
