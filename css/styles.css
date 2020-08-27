@@ -233,7 +233,7 @@ img {
 }
 
 .our-team .item {
-  width: calc(100% - 30px * 3) / 4;
+  width: calc((100% - 30px * 3) / 4);
   margin-right: 30px;
 }
 
