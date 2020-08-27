@@ -53,6 +53,10 @@ img {
   color: var(--primary-text-color);
 }
 
+.font-style {
+  font-style: normal;
+}
+
 .white-text {
   color: var(--accent-white-color);
 }
@@ -136,6 +140,10 @@ img {
   padding-bottom: 200px;
   text-align: center;
   background-color: var(--secondary-bck-color);
+}
+
+.banner {
+  max-width: 696px;
 }
 
 .header-hero {
@@ -351,8 +359,4 @@ img {
 .address-marg {
   margin-bottom: 9px;
   margin-top: 0;
-}
-
-.font-style {
-  font-style: normal;
 }
