@@ -222,7 +222,6 @@ img {
 .subtitle-our-team {
   margin-top: 0;
   margin-bottom: 10px;
-  text-align: center;
   font-weight: 500;
   line-height: 1.2;
   color: var(--header-text-color);
@@ -230,6 +229,7 @@ img {
 
 .our-team {
   display: flex;
+  text-align: center;
 }
 
 .our-team .item {
@@ -242,10 +242,10 @@ img {
 }
 
 .text-our-team {
-  line-height: 1.2;
   margin-top: 0;
   margin-bottom: 0;
-  text-align: center;
+  line-height: 1.2;
+  color: var(--primary-text-color);
 }
 
 .indent-pic {
@@ -253,9 +253,7 @@ img {
 }
 
 /* Портфолио */
-
 /* Обертка */
-
 .wrap-my-project {
   padding-top: 94px;
   padding-bottom: 114px;
@@ -295,7 +293,6 @@ img {
 }
 
 /* Список портфолио */
-
 .portfolio {
   display: flex;
   flex-wrap: wrap;
@@ -359,16 +356,3 @@ img {
 .font-style {
   font-style: normal;
 }
-
-/* calc ((100$ - **px)/3) калькулятор? 
- */
-/* Если нужно раздвинуть элементы на 1-м уровне
-вложенности - используем марджин  */
-/* Если нужно отодвинуть от родителя - 
-применяем для родителя */
-
-/* li calc ((100$ - **px)/3)
- маржины 
-Ниже: 
-li - обнуление крайней геометрии через :nth */
-/* Обернуть в див, задать паддинг до текста и от текста вниз до спана - маржин - картички портфолио */
